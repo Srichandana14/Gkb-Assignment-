@@ -41,4 +41,15 @@ Repository link: https://github.com/Srichandana14/Gkb-Assignment-
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-8.This documentation provides the brief explanation of the project.
+8. Inserted values
+INSERT INTO `user` VALUES 
+  (1, 20, '2001-05-20 00:00:00.000000', 'sri@gmail.com', 'Sri'),
+  (2, 20, '2001-05-12 05:30:00.000000', 'varu@gmail.com', 'Varu'),
+  (3, 21, '2002-02-15 05:30:00.000000', 'chandana@gmail.com', 'Chandana'),
+  (4, 40, '1992-10-21 05:30:00.000000', 'bhavani@gmail.com', 'Bhavani'),
+  (5, 23, '2000-12-26 05:30:00.000000', 'priya@gmail.com', 'Priya'),
+  (6, 24, '2000-12-25 05:30:00.000000', 'shiva@gmail.com', 'Shiva'),
+  (7, 21, '2002-07-24 05:30:00.000000', 'varshini@gmail.com', 'Varshini');
+
+
+9.This documentation provides the brief explanation of the project.
