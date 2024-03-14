@@ -1,0 +1,46 @@
+<form #userForm="ngForm" (ngSubmit)="submitForm(userForm.value)" novalidate>
+    <div class="user-details">
+        <h1>User Form</h1>
+      <div class="input-box">
+        <span class="details">Name</span>
+        <input type="text" placeholder="Enter your Name" name="name" #name="ngModel" [(ngModel)]="user.name" required>
+        <div *ngIf="name.touched && !name.valid" style="color: red;">Please enter name</div>
+      </div>
+      <br/>
+  
+      <div class="input-box">
+        <span class="details">Email</span>
+        <input type="email" placeholder="Enter your email" name="email" #email="ngModel" [(ngModel)]="user.email" required
+          minlength="2" maxlength="30" pattern="[a-zA-Z0-9._%+-]+@gmail\.com$">
+        <div *ngIf="email.touched && !email.valid" style="color: red;">
+          <div *ngIf="email.hasError('required')">Please enter EmailId</div>
+          <div *ngIf="email.hasError('minlength')">Email must have at least 2 characters</div>
+          <div *ngIf="email.hasError('maxlength')">Email must not exceed 30 characters</div>
+          <div *ngIf="email.hasError('pattern')">Please enter a valid Gmail address</div>
+        </div>
+      </div>
+      <br/>
+  
+      <div class="input-box">
+        <span class="details">Age</span>
+        <input type="number" placeholder="Enter your age" name="age" #age="ngModel" [(ngModel)]="user.age" required pattern="^\+91[6-9]\d{9}$">
+        <div *ngIf="age.touched && !age.valid" style="color: red;">
+          <div *ngIf="age.hasError('required')">Age is required.</div>
+          <div *ngIf="age.hasError('pattern')">Invalid age format.</div>
+        </div>
+      </div>
+      <br/>
+      <div class="input-box">
+        <span class="details">Date of Birth</span>
+        <input type="date" placeholder="Enter your dob" name="dob" #dob="ngModel" [(ngModel)]="user.dob" required>
+        <div *ngIf="dob.touched && !dob.valid" style="color: red;">
+          <div *ngIf="dob.hasError('required')">Date of Birth is required.</div>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <div class="button">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  
