@@ -15,4 +15,4 @@ This is a basic web application that allows users to input data, validate it, st
 3. Springboot Project created using spring initialzr.
 4. The database created in mysql and API's by PostMan.
 5. By using below link can acess the project repository
- https://github.com/Srichandana14/Assignment-GKB-.git
+https://github.com/Srichandana14/Gkb-Assignment-/tree/master)https://github.com/Srichandana14/Gkb-Assignment-/tree/master
